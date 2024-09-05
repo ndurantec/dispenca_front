@@ -42,18 +42,19 @@ body {
     border-radius: 3px;
   }
   
-  .btn-class{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  button {
-    width: 120px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+  button[type="button"] {
+    display: block;
+    width: 100%;
     padding: 10px;
-    text-align: center;
-    background: #3cb803;
-    color: rgb(255, 255, 255);
-
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
   }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

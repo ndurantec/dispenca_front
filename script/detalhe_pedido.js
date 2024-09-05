@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function salvar() {
 const detalhe_pedido = document.getElementById("nome_alimento");
    
@@ -41,3 +42,8 @@ const detalhe_pedido = document.getElementById("nome_alimento");
     .catch(error => console.error('Erro!:', error));
     
   }
+=======
+function salvar () {
+   console.log('Chegou no javascript')
+}
+>>>>>>> c33c75b1b53b884a78ae99c2821036318e4f1e62
