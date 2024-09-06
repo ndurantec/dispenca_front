@@ -41,8 +41,9 @@ input[type="text"] {
   border-radius: 3px;
 }
 
-button[type = "button"]:hover {
-  background-color: #3e8e41;
+button[type = "button"]:hover{
+  background-color: #166416;
+  cursor: pointer;
 }
 
 .btn-class{

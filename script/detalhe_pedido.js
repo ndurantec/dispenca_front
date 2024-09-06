@@ -1,6 +1,19 @@
-<<<<<<< HEAD
+
 function salvar() {
-const detalhe_pedido = document.getElementById("nome_alimento");
+console.log("chegou no javascript")
+}
+
+function consultar () {
+  console.log('Chegou no javascript')
+}
+function alterar () {
+  console.log('Chegou no javascript')
+}
+function apagar () {
+  console.log('Chegou no javascript')
+}
+
+
    
   
     var headers = new Headers();    
@@ -41,9 +54,5 @@ const detalhe_pedido = document.getElementById("nome_alimento");
     //Aqui será executado caso a then não seja chamado
     .catch(error => console.error('Erro!:', error));
     
-  }
-=======
-function salvar () {
-   console.log('Chegou no javascript')
-}
->>>>>>> c33c75b1b53b884a78ae99c2821036318e4f1e62
+  
+
