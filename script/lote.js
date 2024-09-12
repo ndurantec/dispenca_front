@@ -5,7 +5,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   
-    fetch('localhost :8080/lote/inserir' ,{
+    fetch('localhost:8080/lote/inserir' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -50,7 +50,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   
-    fetch('localhost :8080/lote/inserir' ,{
+    fetch('localhost:8080/lote/inserir' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -96,7 +96,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   
-    fetch('localhost :8080/lote/inserir' ,{
+    fetch('localhost:8080/lote/inserir' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -142,7 +142,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   
-    fetch('localhost :8080/lote/inserir' ,{
+    fetch('localhost:8080/lote/inserir' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
