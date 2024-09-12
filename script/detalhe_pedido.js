@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> 81573311f3e92b9553af73ef400c2bce774f785d
 function salvar() {
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
@@ -37,6 +40,14 @@ function salvar() {
     })
     //Aqui será executado caso a then não seja chamado
     .catch(error => console.error('Erro!:', error));
+<<<<<<< HEAD
+    
+  }
+function salvar () {
+   console.log('Chegou no javascript')
+}
+
+=======
 }
 
 function consultar() {
@@ -168,3 +179,4 @@ function apagar() {
     
   
 
+>>>>>>> 81573311f3e92b9553af73ef400c2bce774f785d
