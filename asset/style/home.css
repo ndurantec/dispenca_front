@@ -1,6 +1,6 @@
 body {
     background-image: url('../image/Alimentos.png'); /* Substitua pelo caminho da sua imagem */
-    background-size:100%; /* Ajusta a imagem para cobrir todo o fundo */
+    background-size:115%; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     margin: 0;
 }
@@ -10,8 +10,8 @@ body {
     align-items: center;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     padding: 30px 20px;
-    background-color: #333;
-    color: white;
+    background-color: #d1cece;
+    color: rgb(117, 3, 3);
     position: relative; /* Para o uso de flexbox e centralização */
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .nav ul li a {
-    color: white; /* Cor padrão dos links */
+    color: rgb(0, 0, 0); /* Cor padrão dos links */
     text-decoration: none; /* Remove o sublinhado dos links */
     font-size: 20px;
     transition: color 0.3s ease; /* Suaviza a transição da cor */
