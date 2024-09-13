@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const link = document.getElementById('contabt');
+    const link = document.getElementById('lotebt');
 
     // Define o destino do link dinamicamente
-    link.href = 'conta.html'; // Substitua pelo URL da página desejada
+    link.href = 'lote.html'; // Substitua pelo URL da página desejada
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const link = document.getElementById('fluxobt');
+    const link = document.getElementById('detalhe_pedidobt');
 
     // Define o destino do link dinamicamente
-    link.href = 'fluxo.html'; // Substitua pelo URL da página desejada
+    link.href = 'detalhe_pedido.html'; // Substitua pelo URL da página desejada
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const link = document.getElementById('operacaobt');
+    const link = document.getElementById('alimentobt');
 
     // Define o destino do link dinamicamente
-    link.href = 'operacao.html'; // Substitua pelo URL da página desejada
+    link.href = 'alimento.html'; // Substitua pelo URL da página desejada
 });
