@@ -5,7 +5,11 @@
 
 function salvar() {
 
-  const pedido = document.getElementById('detalhe_pedido') .value;
+  
+  const quantidade = document.getElementById('Quantidade') .value;
+  const codigo = document.getElementById('Codigo') .value;
+  const valor = document.getElementById('Valor') .value
+
 
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
@@ -19,7 +23,8 @@ function salvar() {
      
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
-      body: JSON.stringify({ nome: detalhe_pedido }),
+      body: JSON.stringify({
+         nome: detalhe_pedido }),
   
       headers: headers
   

@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const link = document.getElementById('detalhe_tabelabt');
+    const link = document.getElementById('detalhe_pedidobt');
 
     // Define o destino do link dinamicamente
-    link.href = 'detalhe_tabela.html'; // Substitua pelo URL da página desejada
+    link.href = 'detalhe_pedido.html'; // Substitua pelo URL da página desejada
 });
 
 document.addEventListener('DOMContentLoaded', function() {
