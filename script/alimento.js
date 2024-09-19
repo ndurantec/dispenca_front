@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
-  carregarComboLocal();
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//   carregarComboLocal();
+// });
 
 
 
