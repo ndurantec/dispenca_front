@@ -1,6 +1,6 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//   carregarComboLocal();
-// });
+document.addEventListener("DOMContentLoaded", function() {
+   carregarComboAlimento();
+});
 
 function salvar() {
   const lote = document.getElementById("estoque");
@@ -9,7 +9,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/alimento/insert' ,{
+    fetch('http://127.0.0.1:8080/estoque/inserirEstoque' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -183,7 +183,7 @@ function salvar() {
   
   }
 
-  function carregarComboLocal() {
+  function carregarComboAlimento() {
  
     console.log('Carregou a página e chamou a função');
   
@@ -191,7 +191,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/local/findAll' ,{
+    fetch('http://127.0.0.1:8080/alimento/findAll' ,{
   
       method: "GET",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -205,7 +205,7 @@ function salvar() {
       
     }).then(response => response.json())
     .then(data => {
-        const comboBox = document.getElementById('locais');
+        const comboBox = document.getElementById('alimentos');
         data.forEach(local => {
             const option = document.createElement('option');
             option.value = local.id;
@@ -213,7 +213,7 @@ function salvar() {
             comboBox.appendChild(option);
         });
     })
-    .catch(error => console.error('Erro ao carregar locais:', error));
+    .catch(error => console.error('Erro ao carregar alimentos:', error));
      
   
   }
