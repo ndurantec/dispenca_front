@@ -4,6 +4,13 @@
 
 
 function salvar() {
+
+  
+  const quantidade = document.getElementById('Quantidade') .value;
+  const codigo = document.getElementById('Codigo') .value;
+  const valor = document.getElementById('Valor') .value
+
+
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
@@ -16,7 +23,8 @@ function salvar() {
      
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
-      body: JSON.stringify({ nome: detalhe_pedido }),
+      body: JSON.stringify({
+         nome: detalhe_pedido }),
   
       headers: headers
   
@@ -44,6 +52,9 @@ function salvar() {
 }
 
 function consultar() {
+
+  const pedido = document.getElementById('detalhe_pedido') .value;
+
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
@@ -85,6 +96,9 @@ function consultar() {
 
 
 function alterar() {
+
+  const pedido = document.getElementById('detalhe_pedido') .value;
+
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
@@ -125,6 +139,9 @@ function alterar() {
 }
 
 function apagar() {
+
+  const pedido = document.getElementById('detalhe_pedido') .value;
+
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
@@ -166,6 +183,8 @@ function apagar() {
 
 function carregarComboLocal() {
  
+  const pedido = document.getElementById('detalhe_pedido') .value;
+
   console.log('Carregou a página e chamou a função');
 
   var headers = new Headers();    
