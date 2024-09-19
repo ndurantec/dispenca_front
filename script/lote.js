@@ -3,7 +3,7 @@
 // });
 
 function salvar() {
-  const lote = document.getElementById("nome_lote");
+  const lote = document.getElementById("estoque");
  
     var headers = new Headers();    
     headers.append("Content-Type", "application/json");
