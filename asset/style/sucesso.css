@@ -1,0 +1,33 @@
+/* Estilos da página de sucesso */
+.success-container {
+    max-width: 600px;
+    margin: 100px auto; /* Centraliza a mensagem verticalmente e horizontalmente */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center; /* Centraliza o texto */
+  }
+ 
+  .success-container h1 {
+    color: #4CAF50; /* Cor do título para combinar com o botão */
+    margin-bottom: 20px;
+  }
+ 
+  .success-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+ 
+  .success-container button {
+    background-color: #4CAF50; /* Botão com a mesma cor do formulário */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+ 
+  .success-container button:hover {
+    background-color: #3e8e41;
+  }
