@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const link = document.getElementById('alimentobt');
+        const link = document.getElementById('alimentobt');
 
     // Define o destino do link dinamicamente
     link.href = 'alimento.html'; // Substitua pelo URL da página desejada
