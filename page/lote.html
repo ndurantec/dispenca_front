@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Formulário</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<link rel="stylesheet" href="../asset/style/lote.css">
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="../asset/style/lote.css">
 </head>
 <body>
-	<h1>Lote</h1>
-	<form id="cadastro_professor">
-		<label for="primeiro_numero_inteiro">Alimento:</label>
-		<input type="text" id="nome_prof"><br>
-		
-		<label for="nome_prof">Quantidade:</label>
-		<input type="text" id="nome_prof"><br>
+    <h1>Lote</h1>
+    <form id="estoque">
+        <label for="lote_estoque">Alimento:</label>
+        <select id="alimento"></select><br>
+        
+        <label for="lote_estoque">Quantidade:</label>
+        <input type="text" id="Quantidade"><br>
 
-		<label for="nome_prof">Codigo:</label>
-		<input type="text" id="nome_prof"><br>
+        <label for="lote_codigo">Codigo:</label>
+        <input type="text" id="codigo"><br>
 
-		<label for="nome_prof">Data de vencimento:</label>
-		<input type="text" id="nome_prof"><br>
+        <label for="lote_vencimento">Data de vencimento:</label>
+        <input type="text" id="Data de vencimento"><br>
 
-		
-		<div class="btn-class">
-			<button type="button" id="submit-btn-salvar" onclick="salvar()">salvar </button>
-			<button type="button" id="submit-btn-consultar" onclick="consultar()">consultar</button>
-			<button type="button" id="submit-btn-alterar" onclick="alterar()">alterar</button>
-			<button type="button" id="submit-btn-alterar" onclick="apagar()">apagar</button>
-		</div>
-			<!-- <button type="submit" onclick="executar()">Enviar</button> -->
-	</form>	
-	<script src="../script/lote.js"></script>
+        
+        <div class="btn-class">
+            <button type="button" id="submit-btn-salvar" onclick="salvar()">salvar </button>
+            <button type="button" id="submit-btn-consultar" onclick="consultar()">consultar</button>
+            <button type="button" id="submit-btn-alterar" onclick="alterar()">alterar</button>
+            <button type="button" id="submit-btn-alterar" onclick="apagar()">apagar</button>
+        </div>
+            <!-- <button type="submit" onclick="executar()">Enviar</button> -->
+    </form> 
+    <script src="../script/lote.js"></script>
 </body>
 </html>
