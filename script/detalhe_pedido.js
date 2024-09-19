@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function salvar() {
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
-    headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+    headers.append('Access-Control-Allow-Origin', '*');
   
     fetch('http://127.0.0.1:8080/alimento/insert' ,{
   
@@ -46,7 +46,7 @@ function salvar() {
 function consultar() {
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
-    headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+    headers.append('Access-Control-Allow-Origin', '*');
   
     fetch('http://127.0.0.1:8080/alimento/findById' ,{
   
@@ -87,7 +87,7 @@ function consultar() {
 function alterar() {
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
-    headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+    headers.append('Access-Control-Allow-Origin', '*');
   
     fetch('http://127.0.0.1:8080/alimento/update' ,{
   
@@ -127,7 +127,7 @@ function alterar() {
 function apagar() {
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
-    headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+    headers.append('Access-Control-Allow-Origin', '*');
   
     fetch('http://127.0.0.1:8080/alimento/delete' ,{
   
@@ -170,7 +170,7 @@ function carregarComboLocal() {
 
   var headers = new Headers();    
   headers.append("Content-Type", "application/json");
-  headers.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+  headers.append('Access-Control-Allow-Origin', '*');
 
   fetch('http://127.0.0.1:8080/local/findAll' ,{
 
