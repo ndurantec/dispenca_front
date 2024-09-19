@@ -11,7 +11,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/alimento/insert' ,{
+    fetch('http://127.0.0.1:8080/DetalhePedido/inserirDetalhe' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -54,9 +54,9 @@ function consultar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/alimento/findById' ,{
+    fetch('http://127.0.0.1:8080/DetalhePedido/findById' ,{
   
-      method: "POST",
+      method: "GET",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
       cache: "no-cache",
      
@@ -98,7 +98,7 @@ function alterar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/alimento/update' ,{
+    fetch('http://127.0.0.1:8080/DetalhePedido/atualizarDetalhePedido' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -141,7 +141,7 @@ function apagar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/alimento/delete' ,{
+    fetch('http://127.0.0.1:8080/DetalhePedido/deletarDetalhePedido' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
