@@ -1,11 +1,11 @@
 /* Estilos da página de sucesso */
 .success-container {
     max-width: 600px;
-    margin: 100px auto; /* Centraliza a mensagem verticalmente e horizontalmente */
+    margin: 300px auto; /* Centraliza a mensagem verticalmente e horizontalmente */
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
+    border: 1px solid #0f6d07;
+    border-radius: 10px;
+    background-color: #ffffff;
     text-align: center; /* Centraliza o texto */
   }
  
@@ -21,7 +21,7 @@
  
   .success-container button {
     background-color: #4CAF50; /* Botão com a mesma cor do formulário */
-    color: #fff;
+    color: #fafafa;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
