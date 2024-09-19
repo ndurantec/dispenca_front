@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const link = document.getElementById('lotebt');
 
     // Define o destino do link dinamicamente
