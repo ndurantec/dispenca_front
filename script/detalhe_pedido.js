@@ -5,7 +5,7 @@
 
 function salvar() {
 
-  const horario = document.getElementById('Horario') .value;
+  
   const quantidade = document.getElementById('Quantidade') .value;
   const codigo = document.getElementById('Codigo') .value;
   const valor = document.getElementById('Valor') .value
