@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     padding: 30px 20px;
-    background-color: #d1cece;
+    background-color: #cdf7f1;
     color: rgb(117, 3, 3);
     position: relative; /* Para o uso de flexbox e centralização */
 }
