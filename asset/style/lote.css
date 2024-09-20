@@ -34,6 +34,14 @@ h1 {
   text-align: center;
   margin-top: 50px;
 }
+select[id="alimentos"] {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+}
 
 input[type="text"] {
   display: block;
