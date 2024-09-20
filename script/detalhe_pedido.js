@@ -6,6 +6,7 @@
 function salvar() {
 
   
+<<<<<<< HEAD
   const quantidade = document.getElementById('Quantidade').value;
   const valor_pedido = document.getElementById('valor').value;
   const status = document.getElementById('status da entrega').value;
@@ -13,6 +14,15 @@ function salvar() {
 console.log (quantidade);
 console.log (valor_pedido);
 console.log (status);
+=======
+  const Quantidade = document.getElementById('Quantidade') .value;
+  const Codigo = document.getElementById('Codigo') .value;
+  const Valor = document.getElementById('Valor') .value;
+ 
+console.log(Quantidade)
+console.log(Codigo)
+console.log(Valor)
+>>>>>>> f6ede79af6e43b7f238a77b51e090f75e35f7af1
 
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
