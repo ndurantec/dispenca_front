@@ -3,17 +3,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function salvar() {
-  const lote = document.getElementById("estoque").value;
-  const quantidade = Number(document.getElementById("estoque").value);
-  const codigo = document.getElementById("codigo").value
- 
+  const lote = document.getElementById('estoque').value;
+  const alimento = document.getElementById('alimentos').value;
+  const quantidade = Number(document.getElementById('quantidade').value);
+  const codigo = document.getElementById('codigo').value;
+  const lote_vencimento = document.getElementById('data_de_vencimento').value;
+
 console.log(lote);
+console.log(alimento); 
 console.log(quantidade);
+console.log(codigo);
+console.log(lote_vencimento);
 
     var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
+    //fetch('http://127.0.0.1:8080/estoque/insert' ,{
+
     fetch('http://127.0.0.1:8080/estoque/insert' ,{
   
       method: "POST",
@@ -23,8 +30,12 @@ console.log(quantidade);
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
       body: JSON.stringify({ 
-        nome: lote,
-        quantidade: quantidade 
+        lote: lote,
+        alimento: {id: alimento},
+        quantidade: quantidade,
+        codigo: codigo,
+        data: lote_vencimento
+
       }),
   
       headers: headers
@@ -38,7 +49,7 @@ console.log(quantidade);
         console.log('Foi no servidor e voltou');
   
         //Esta linha carrega a página sucesso
-        //window.location.href = 'sucesso.html'    
+        window.location.href = 'sucesso.html'    
       } else {
         //Esta linha imprime a mensagem no console
         console.log('Aconteceu algo que não foi possivel salvar');

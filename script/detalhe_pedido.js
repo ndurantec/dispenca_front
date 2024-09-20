@@ -6,10 +6,13 @@
 function salvar() {
 
   
-  const quantidade = document.getElementById('Quantidade') .value;
-  const codigo = document.getElementById('Codigo') .value;
-  const valor = document.getElementById('Valor') .value
+  const quantidade = document.getElementById('Quantidade').value;
+  const valor_pedido = document.getElementById('valor').value;
+  const status = document.getElementById('status da entrega').value;
 
+console.log (quantidade);
+console.log (valor_pedido);
+console.log (status);
 
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
