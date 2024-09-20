@@ -112,7 +112,6 @@ function salvar() {
          
       
       }
-
       function alterar() { 
 
         const alimento = document.getElementById('nome_alimento').value;  
