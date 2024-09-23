@@ -5,25 +5,14 @@
 
 function salvar() {
 
-  
-<<<<<<< HEAD
-  const quantidade = document.getElementById('Quantidade').value;
+  const quantidade = Number(document.getElementById('quantidade').value);
+  const status = document.getElementById('statusSntrega').value;
   const valor_pedido = document.getElementById('valor').value;
-  const status = document.getElementById('status da entrega').value;
-
-console.log (quantidade);
-console.log (valor_pedido);
-console.log (status);
-=======
-  const Quantidade = document.getElementById('Quantidade') .value;
-  const Codigo = document.getElementById('Codigo') .value;
-  const Valor = document.getElementById('Valor') .value;
+  
+  console.log (quantidade);
+  console.log (status);
+  console.log (valor_pedido);
  
-console.log(Quantidade)
-console.log(Codigo)
-console.log(Valor)
->>>>>>> f6ede79af6e43b7f238a77b51e090f75e35f7af1
-
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
@@ -37,7 +26,11 @@ console.log(Valor)
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
       body: JSON.stringify({
-         nome: detalhe_pedido }),
+         nome: detalhe_pedido,
+         quantidade: quantidade,
+         status: status,
+         valor: valor_pedido
+        }),
   
       headers: headers
   
