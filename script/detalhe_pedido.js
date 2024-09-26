@@ -26,9 +26,9 @@ function salvar() {
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
       body: JSON.stringify({
-         quantidade: quantidade,
-         status: status_entrega,
-         valor: valor_pedido
+        quantidadeSolicitada: quantidade,
+        valor: valor_pedido,
+        statusEntrega: status_entrega        
         }),
   
       headers: headers
@@ -42,7 +42,7 @@ function salvar() {
         console.log('Foi no servidor e voltou');
   
         //Esta linha carrega a página sucesso
-        //window.location.href = 'sucesso.html'    
+        window.location.href = 'sucesso.html'    
       } else {
         //Esta linha imprime a mensagem no console
         console.log('Aconteceu algo que não foi possivel salvar');
