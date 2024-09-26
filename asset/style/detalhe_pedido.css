@@ -75,3 +75,10 @@ color: rgb(255, 255, 255);
 transition: 0.5s;
 }
 
+
+select{
+  width: 38rem;
+  padding: 2%;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+}

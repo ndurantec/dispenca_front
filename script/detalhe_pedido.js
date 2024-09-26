@@ -5,19 +5,19 @@
 
 function salvar() {
 
-  const quantidade = Number(document.getElementById('quantidade').value);
-  const status = document.getElementById('statusSntrega').value;
+  const quantidade = Number(document.getElementById('qtd').value);
+  const status_entrega = document.getElementById('status').value;
   const valor_pedido = document.getElementById('valor').value;
   
   console.log (quantidade);
-  console.log (status);
+  console.log (status_entrega);
   console.log (valor_pedido);
  
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/DetalhePedido/inserirDetalhe' ,{
+    fetch('http://127.0.0.1:8080/DetalhePedido/insert' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -26,9 +26,8 @@ function salvar() {
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
       body: JSON.stringify({
-         nome: detalhe_pedido,
          quantidade: quantidade,
-         status: status,
+         status: status_entrega,
          valor: valor_pedido
         }),
   
@@ -43,7 +42,7 @@ function salvar() {
         console.log('Foi no servidor e voltou');
   
         //Esta linha carrega a página sucesso
-        window.location.href = 'sucesso.html'    
+        //window.location.href = 'sucesso.html'    
       } else {
         //Esta linha imprime a mensagem no console
         console.log('Aconteceu algo que não foi possivel salvar');
