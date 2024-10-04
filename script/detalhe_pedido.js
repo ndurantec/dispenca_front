@@ -5,17 +5,19 @@
 
 function salvar() {
 
+  const quantidade = Number(document.getElementById('qtd').value);
+  const status_entrega = document.getElementById('status').value;
+  const valor_pedido = document.getElementById('valor').value;
   
-  const quantidade = document.getElementById('Quantidade') .value;
-  const codigo = document.getElementById('Codigo') .value;
-  const valor = document.getElementById('Valor') .value
-
-
+  console.log (quantidade);
+  console.log (status_entrega);
+  console.log (valor_pedido);
+ 
   var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/DetalhePedido/inserirDetalhe' ,{
+    fetch('http://127.0.0.1:8080/DetalhePedido/insert' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -24,7 +26,10 @@ function salvar() {
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
       body: JSON.stringify({
-         nome: detalhe_pedido }),
+        quantidadeSolicitada: quantidade,
+        valor: valor_pedido,
+        statusEntrega: status_entrega        
+        }),
   
       headers: headers
   

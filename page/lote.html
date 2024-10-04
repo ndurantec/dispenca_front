@@ -9,20 +9,23 @@
 <body>
 	<h1>Lote</h1>
 	<form id="estoque">
-		<label for="lote_estoque">Alimento:</label>
-		<select id="alimento"></select><br>
-		
-		<label for="lote_estoque">Quantidade:</label>
-		<input type="text" id="Quantidade"><br>
+
+        <label for="alimentos">Escolha o Alimento</label>
+        <select id="alimentos">
+            <option value="">Selecione um Alimento</option>
+        </select>
+		 
+		<label for="lote_quantidade">Quantidade:</label>
+		<input type="number" id="quantidade"><br>
 
 		<label for="lote_codigo">Codigo:</label>
 		<input type="text" id="codigo"><br>
 
 		<label for="lote_vencimento">Data de vencimento:</label>
-		<input type="text" id="Data de vencimento"><br>
+		<input type="datetime-local" id="data_de_vencimento"><br>
         
         <div class="btn-class">
-            <button type="button" id="submit-btn-salvar" onclick="salvar()">salvar </button>
+            <button type="button" id="submit-btn-salvar" onclick="salvar()">salvar</button>
             <button type="button" id="submit-btn-consultar" onclick="consultar()">consultar</button>
             <button type="button" id="submit-btn-alterar" onclick="alterar()">alterar</button>
             <button type="button" id="submit-btn-alterar" onclick="apagar()">apagar</button>

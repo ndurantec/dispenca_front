@@ -1,15 +1,27 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//   carregarComboLocal();
-// });
+document.addEventListener("DOMContentLoaded", function() {
+   carregarComboAlimento();
+});
 
 function salvar() {
-  const lote = document.getElementById("estoque");
- 
+  const lote = document.getElementById('estoque').value;
+  const alimento = document.getElementById('alimentos').value;
+  const quantidade = Number(document.getElementById('quantidade').value);
+  const codigo = document.getElementById('codigo').value;
+  const lote_vencimento = document.getElementById('data_de_vencimento').value;
+
+console.log(lote);
+console.log(alimento); 
+console.log(quantidade);
+console.log(codigo);
+console.log(lote_vencimento);
+
     var headers = new Headers();    
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/alimento/insert' ,{
+    //fetch('http://127.0.0.1:8080/estoque/insert' ,{
+
+    fetch('http://127.0.0.1:8080/estoque/insert' ,{
   
       method: "POST",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -17,7 +29,14 @@ function salvar() {
      
       // Convertendo o objeto JavaScript para JSON
       // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
-      body: JSON.stringify({ nome: lote }),
+      body: JSON.stringify({ 
+        lote: lote,
+        alimento: {id: alimento},
+        quantidade: quantidade,
+        codigo: codigo,
+        data: lote_vencimento
+
+      }),
   
       headers: headers
   
@@ -183,7 +202,7 @@ function salvar() {
   
   }
 
-  function carregarComboLocal() {
+  function carregarComboAlimento() {
  
     console.log('Carregou a página e chamou a função');
   
@@ -191,7 +210,7 @@ function salvar() {
     headers.append("Content-Type", "application/json");
     headers.append('Access-Control-Allow-Origin', '*');
   
-    fetch('http://127.0.0.1:8080/local/findAll' ,{
+    fetch('http://127.0.0.1:8080/alimento/findAll' ,{
   
       method: "GET",
       mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
@@ -205,7 +224,7 @@ function salvar() {
       
     }).then(response => response.json())
     .then(data => {
-        const comboBox = document.getElementById('locais');
+        const comboBox = document.getElementById('alimentos');
         data.forEach(local => {
             const option = document.createElement('option');
             option.value = local.id;
@@ -213,7 +232,7 @@ function salvar() {
             comboBox.appendChild(option);
         });
     })
-    .catch(error => console.error('Erro ao carregar locais:', error));
+    .catch(error => console.error('Erro ao carregar alimentos:', error));
      
   
   }
