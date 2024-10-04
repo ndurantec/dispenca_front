@@ -18,3 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define o destino do link dinamicamente
     link.href = 'alimento.html'; // Substitua pelo URL da página desejada
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const link = document.getElementById('buscar_produtobt');
+
+// Define o destino do link dinamicamente
+link.href = 'buscar_produto.html'; // Substitua pelo URL da página desejada
+});
