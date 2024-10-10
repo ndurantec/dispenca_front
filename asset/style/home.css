@@ -52,3 +52,13 @@ body {
     color: rgb(0, 136, 18); /* Cor dos links quando o mouse está sobre eles */
     text-decoration: underline; /* Opcional: adiciona sublinhado ao passar o mouse */
 }
+
+.time{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    font-size: 3rem;
+    color: #cdf7f1;
+    margin-top: 10rem;
+}
