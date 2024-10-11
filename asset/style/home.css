@@ -54,11 +54,11 @@ body {
 }
 
 .time{
-    justify-content: center;
-    align-items: center;
+    position: absolute; 
+    right: 15px;
     margin: 0 auto;
     display: flex;
     font-size: 3rem;
-    color: #cdf7f1;
+    color: #3a6861;
     margin-top: 10rem;
 }
