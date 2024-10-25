@@ -61,7 +61,7 @@ input[type="number"] {
   border-radius: 50px;
 }
 
-input[type="datetime-local"] {
+input[type="date"] {
   display: block;
   width: 95%;
   padding: 10px;

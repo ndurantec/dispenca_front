@@ -53,6 +53,7 @@ function salvar() {
   
   }
 
+  //sql: linguagem de programação para banco de dados
 
   function consultar() { 
 
