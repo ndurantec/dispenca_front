@@ -97,22 +97,25 @@ function consultar() {
 
   })
 
-  .then(id_alimento => {
+    .then(id_alimento => {
 
-    console.log("ID do alimento recebido:", id_alimento);
+      console.log("ID do alimento recebido:", id_alimento);
 
-    if (id_alimento){
-      localStorage.setItem('id_alimento', id_alimento);
-      alert("Alimento av=chado com sucesso, agora você pode alterá-lo");
-    } else {
-      localStorage.setItem('id_alimento', '');
-      console.error("Id não encontrado na resposta");
-    }
-  })
-  .catch(error =>{
-    console.error("Erro capturado no catch", error);
-  });
+      if (id_alimento) {
+        localStorage.setItem('id_alimento', id_alimento);
+        alert("Alimento achado com sucesso, agora você pode alterá-lo");
+      } else {
+        localStorage.setItem('id_alimento', '');
+        console.error("Id não encontrado na resposta");
+      }
+    })
+    .catch(error => {
+      console.error("Erro capturado no catch", error);
+    });
 }
+
+
+
 
 function alterar() {
 
