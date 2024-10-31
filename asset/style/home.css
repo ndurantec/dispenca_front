@@ -3,6 +3,7 @@ body {
     background-size:115%; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .header {
