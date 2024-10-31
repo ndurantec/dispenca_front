@@ -5,6 +5,12 @@
 function salvar() {
 
   const alimento = document.getElementById('nome_alimento').value;
+if (nome_alimento == "") {
+  alert ("nome não informado");
+  getElementById('nome_alimento').focus ();
+  getElementById('nome_alimento').value = "" ();
+  return
+}
 
 
   var headers = new Headers();
