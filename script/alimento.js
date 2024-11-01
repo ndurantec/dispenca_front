@@ -4,13 +4,25 @@
 
 function salvar() {
 
-  const alimento = document.getElementById('nome_alimento').value;
-if (nome_alimento == "") {
+  const nome_alimento = document.getElementById('nome_alimento').value;
+  if (nome_alimento == "") {
   alert ("nome não informado");
   getElementById('nome_alimento').focus ();
   getElementById('nome_alimento').value = "" ();
   return
 }
+
+if (nome_alimento.trim() === '' || nome_alimento.length < 2) {
+  return false
+}
+
+const regex = /^[A-Za-zÀ-ÿ\s]+$/;
+return regex.test(nome); }
+
+if (nome_alimento.length ===0) {
+  alert("Nome Válido!");
+} else {
+  alert("Nome Inválido! Deve ter pelo menos 2 caracteres e conter apenas letras.");
 
 
   var headers = new Headers();
@@ -62,6 +74,8 @@ if (nome_alimento == "") {
 function consultar() {
 
   const alimento = document.getElementById('nome_alimento').value;
+
+
 
   console.log(alimento);
 

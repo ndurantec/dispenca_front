@@ -66,8 +66,9 @@ function salvar() {
 }
 
 function consultar() {
-  const lote = document.getElementById("estoque");
-  console.log(estoque)
+  const codigo_lote = document.getElementById('codigo').value;
+
+  console.log(codigo_lote)
 
 
   var headers = new Headers();
@@ -82,7 +83,7 @@ function consultar() {
 
     // Convertendo o objeto JavaScript para JSON
     // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
-    body: JSON.stringify({ nome: lote }),
+    body: JSON.stringify({ codigo: codigo_lote }),
 
     headers: headers
 
@@ -100,14 +101,14 @@ function consultar() {
     }
 
   })
-    .then(codigo_lote => {
-      console.log("Codigo do lote recebido:", codigo_lote);
+    .then(id_lote => {
+      console.log("ID do lote recebido:", id_lote);
 
-      if (codigo_lote) {
-        localStorage.setItem('codigo_lote', codigo_lote);
+      if (id_lote) {
+        localStorage.setItem('id_lote', id_lote);
         alert("Item achado com sucesso! Agora é possivel alterar ou deletar");
       } else {
-        console.error("codigo não encontrado na resposta");
+        console.error("Id não encontrado na resposta");
       }
     })
     .catch(error => {
