@@ -5,24 +5,28 @@
 function salvar() {
 
   const nome_alimento = document.getElementById('nome_alimento').value;
+
+  console.log(nome_alimento);
+
   if (nome_alimento == "") {
   alert ("nome não informado");
   getElementById('nome_alimento').focus ();
-  getElementById('nome_alimento').value = "" ();
-  return
+  return;
 }
 
-if (nome_alimento.trim() === '' || nome_alimento.length < 2) {
-  return false
+if ( nome_alimento.length < 2) {
+   alert("o nome do alimento deve conter no minimo 2 caractere.");
+  return;
 }
 
-const regex = /^[A-Za-zÀ-ÿ\s]+$/;
-return regex.test(nome); }
+// const regex = /^[A-Za-zÀ-ÿ\s]+$/;
+// return regex.test(nome); }
 
-if (nome_alimento.length ===0) {
-  alert("Nome Válido!");
-} else {
-  alert("Nome Inválido! Deve ter pelo menos 2 caracteres e conter apenas letras.");
+
+if (nome_alimento.length > 50){
+        alert("o nome deve ter no máximo 50 caracteres");
+    return;
+}
 
 
   var headers = new Headers();
@@ -39,7 +43,7 @@ if (nome_alimento.length ===0) {
 
     // Convertendo o objeto JavaScript para JSON
     // Esta parte é importante onde você deve passar os parametros (dados) da sua tela
-    body: JSON.stringify({ nome: alimento }),
+    body: JSON.stringify({ nome: nome_alimento }),
 
     headers: headers
 

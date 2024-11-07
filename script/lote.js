@@ -125,9 +125,9 @@ function alterar() {
   headers.append("Content-Type", "application/json");
   headers.append('Access-Control-Allow-Origin', '*');
 
-  fetch('http://127.0.0.1:8080/alimento/update', {
+  fetch(`http://127.0.0.1:8080/alimento/${ID}`, {
 
-    method: "POST",
+    method: "PUT",
     mode: "cors", // Usando 'cors' para permitir a requisição de origem cruzada
     cache: "no-cache",
 
