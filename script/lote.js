@@ -3,6 +3,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function salvar() {
+
+  
+  const nome_lote = document.getElementById('nome_lote').value;
+
+  console.log(nome_lote);
+
+  if (nome_lote == "") {
+  alert ("nome não informado");
+  getElementById('nome_lote').focus ();
+  return;
+}
+
+if ( nome_lote.length < 2) {
+   alert("o nome do lote deve conter no minimo 2 caractere.");
+  return;
+}
+
+// const regex = /^[A-Za-zÀ-ÿ\s]+$/;
+// return regex.test(nome); }
+
+
+if (nome_lote.length > 50){
+        alert("o nome deve ter no máximo 50 caracteres");
+    return;
+}
+
   const lote = document.getElementById('estoque').value;
   const alimento = document.getElementById('alimentos').value;
   const quantidade = Number(document.getElementById('quantidade').value);

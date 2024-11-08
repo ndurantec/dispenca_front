@@ -3,7 +3,32 @@
 // });
 
 
-function salvar() {
+function salvar() { 
+
+  const nome_detalhe_pedido = document.getElementById('nome_detalhe_pedido').value;
+
+  console.log(nome_detalhe_pedido);
+
+  if (nome_detalhe_pedido == "") {
+  alert ("nome não informado");
+  getElementById('nome_detalhe_pedido').focus ();
+  return;
+}
+
+if ( nome_detalhe_pedido.length < 2) {
+   alert("o nome do detalhe_pedido deve conter no minimo 2 caractere.");
+  return;
+}
+
+// const regex = /^[A-Za-zÀ-ÿ\s]+$/;
+// return regex.test(nome); }
+
+
+if (nome_detalhe_pedido.length > 50){
+        alert("o nome deve ter no máximo 50 caracteres");
+    return;
+}
+
 
   const quantidade = Number(document.getElementById('qtd').value);
   const status_entrega = document.getElementById('status').value;
